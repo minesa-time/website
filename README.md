@@ -1,2 +1,3 @@
-# website
-This is official website of Minesa Hub.
+# Minesa Hub
+
+This is our team.
