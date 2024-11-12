@@ -203,6 +203,12 @@ section.hero {
             color: var(--dark-text-color);
         }
     }
+
+    & p {
+        margin-top: 0.5em;
+        color: var(--red-color);
+        font-weight: 600;
+    }
 }
 .image-circle {
     position: absolute;
@@ -380,8 +386,8 @@ section.hero {
 }
 
 .fade-in {
-    animation: fadeIn 1 1.5s forwards ease-out;
-    transform: scale(0.1);
+    animation: fadeIn 1 1.5s forwards ease;
+    transform: scale(0.0001);
     transform-origin: bottom;
 }
 
