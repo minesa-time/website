@@ -234,6 +234,7 @@ section#team {
         color: var(--dark-text-color);
         font-weight: 900;
         text-align: center;
+        text-wrap: pretty;
     }
 
     & h1 {
