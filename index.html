@@ -18,20 +18,10 @@
             />
             <!-- Dynamic Notification -->
             <div tabindex="-1" class="dynamic-header springish">
-                <img
-                    width="25px"
-                    height="25px"
-                    src="../../assets/images/teams/neo/Game.jpg"
-                    alt=""
-                />
+                <span>Navigation</span>
                 <div class="content">
-                    <h4
-                        class="now-playing"
-                        style="color: var(--secondary-color)"
-                    >
-                        New song is out!
-                    </h4>
-                    <h5 class="album-name">Heroes of Realm</h5>
+                    <a href="#team"><li>Teams ✦</li></a>
+                    <a href="#projects"><li>Projects</li></a>
                 </div>
                 <div
                     class="circle"
@@ -39,35 +29,45 @@
                 ></div>
             </div>
             <!-- Mail Icon -->
-            <img class="springish" src="./assets/vectors/contact.svg" alt="" />
+            <a
+                href="mailto:minesa_hub@icloud.com?subject=I%20Want%20to%20Work%20Together"
+                rel="noopener noreferrer"
+            >
+                <img
+                    class="springish"
+                    src="./assets/vectors/contact.svg"
+                    alt=""
+                />
+            </a>
         </header>
 
         <main>
-            <section>
-                <div class="hero-title-section">
-                    <p>Interact to us.</p>
-                    <h1><span>We're here.</span> Just here and there.</h1>
+            <section id="team">
+                <p>We’re just a click away.</p>
+                <h1><span>Here, there,</span> and <span>everywhere!</span></h1>
 
-                    <a
-                        href="./pages/team/mica.html"
-                        class="image-circle circle1"
-                    >
-                        <img src="./assets/images/mica_face.jpeg" alt="Mica" />
-                    </a>
+                <a href="./pages/team/mica.html" class="image-circle circle1">
+                    <img src="./assets/images/mica_face.jpeg" alt="Mica" />
+                </a>
 
-                    <a
-                        href="./pages/team/neo.html"
-                        class="image-circle circle2"
-                    >
-                        <img src="./assets/images/neo_face.jpeg" alt="Neo" />
-                    </a>
+                <a href="./pages/team/neo.html" class="image-circle circle2">
+                    <img src="./assets/images/neo_face.jpeg" alt="Neo" />
+                </a>
 
-                    <a
-                        href="./pages/team/saku.html"
-                        class="image-circle circle3"
-                    >
-                        <img src="./assets/images/saku_face.jpeg" alt="Saku" />
-                    </a>
+                <a href="./pages/team/saku.html" class="image-circle circle3">
+                    <img src="./assets/images/saku_face.jpeg" alt="Saku" />
+                </a>
+            </section>
+            <section id="projects">
+                <h2>Projects</h2>
+                <p>We will showcase our projects soon.</p>
+                <div>
+                    <div class="project" id="kaeru">
+                        <p>Most powerful and functional ticket app.</p>
+                    </div>
+                    <div class="project" id="ita">
+                        <p>Your chat app.</p>
+                    </div>
                 </div>
             </section>
         </main>
