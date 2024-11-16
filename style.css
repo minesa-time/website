@@ -290,6 +290,7 @@ section#projects {
         background-size: cover;
         transition: all 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
         mix-blend-mode: normal;
+        text-decoration: none;
 
         /* Hover effect */
         &:hover {
