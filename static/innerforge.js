@@ -36,8 +36,7 @@
 		list.innerHTML = items.map(item => `
 			<li>
 				<a class="if-sponsor-link" href="${item.url}" target="_blank" rel="noreferrer">
-					<span class="if-sponsor-name">${item.name}</span>
-					<span class="if-sponsor-login">@${item.login}</span>
+					<span class="if-sponsor-name">@${item.login}</span>
 				</a>
 			</li>
 		`).join("");
