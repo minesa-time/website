@@ -15,6 +15,7 @@
 		loading: document.getElementById("loading"),
 		loadingLabel: document.getElementById("loading-label"),
 		content: document.getElementById("content"),
+		switcher: document.querySelector(".member-switcher"),
 		router: document.getElementById("member-router"),
 		avatar: document.getElementById("avatar"),
 		nameLabel: document.getElementById("name-label"),
@@ -596,6 +597,7 @@
 		clearRenderedContent();
 		applyTheme(member, memberKey);
 		updateRouterActive(memberKey);
+		document.title = `${getMemberNickname(memberKey)} | The Minesa Studios`;
 
 		if (MEMBER_ORDER.includes(memberKey)) startAmbient(memberKey);
 		else stopAmbient();
@@ -670,7 +672,13 @@
 			if (!link) return;
 			event.preventDefault();
 			const memberKey = link.getAttribute("data-member-route");
+			refs.switcher?.classList.add("is-collapsed");
+			document.activeElement?.blur();
 			navigateToMember(memberKey, { push: true });
+		});
+
+		refs.switcher?.addEventListener("pointerleave", () => {
+			refs.switcher.classList.remove("is-collapsed");
 		});
 
 		window.addEventListener("popstate", () => {
